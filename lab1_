@@ -1,0 +1,21 @@
+import math
+
+# R hesabı
+R = 22.5*(1/2) - 7.5 * ((3 * math.sqrt(2.87))*2) * math.cos(1)
+
+# m hesabı
+m = -math.log10(1.6*(3 * math.sqrt(1.2)) * math.e*3)
+
+# r için örnek bir değer (r'nin değeri verilmemiş, kullanıcıdan alınabilir)
+r = float(input("r değerini girin: "))
+
+# S hesabı
+if abs(R) > abs(m) + 1/2:
+    S = (4 * r + 5 * m) / (R*2 + m*2)
+else:
+    S = abs(R - m)
+
+# Sonuçları ekrana yazdır
+print(f"R = {R}")
+print(f"m = {m}")
+print(f"S = {S}")
