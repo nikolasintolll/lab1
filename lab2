@@ -1,0 +1,17 @@
+import numpy as np
+
+# x aralığı [1,4] ve adım 0.5
+x_values = np.arange(1, 4.5, 0.5)
+
+# Fonksiyonu tanımlama
+def y(x):
+    if x == 2:
+        return 9*x**2 + 3
+    elif x < 2:
+        return -8*x + 5
+    else:  # x > 2
+        return 3*x - 2
+
+# Sonuçları hesaplayıp yazdırma
+for x in x_values:
+    print(f"x = {x}, y = {y(x)}")
