@@ -1,10 +1,8 @@
-import math
-
 # R hesabı
-R = 22.5*(1/2) - 7.5 * ((3 * math.sqrt(2.87))*2) * math.cos(1)
+R = 22.5**(1/2) - 7.5 * (2.87)**(2/3) * math.cos(1)
 
 # m hesabı
-m = -math.log10(1.6*(3 * math.sqrt(1.2)) * math.e*3)
+m = -math.log10((1.6)**(1.2**(1/3))*math.e**3)
 
 # r için örnek bir değer (r'nin değeri verilmemiş, kullanıcıdan alınabilir)
 r = float(input("r değerini girin: "))
